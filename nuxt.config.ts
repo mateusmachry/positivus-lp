@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   colorMode: {
     preference: 'light'
   },
-  modules: ['@nuxt/ui', '@nuxt/fonts'],
+  modules: ['@nuxt/ui', '@nuxt/fonts', '@vueuse/motion/nuxt'],
   app: {
     head: {
       title: 'Positivus',

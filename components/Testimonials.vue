@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#191A23] flex flex-col rounded-3xl shadow-sm">
+    <div class="bg-positivus-dark flex flex-col rounded-3xl shadow-sm">
         <div class="flex flex-row justify-center gap-12 items-center mt-10 md:mt-20 mb-16 md:mb-36 overflow-x-hidden">
             <div v-for="(testimonial, index) in testimonials" :id="`testimonial-${index}`" :key="`testimonial-${index}`"
                 class="relative flex flex-col flex-shrink-0 flex-grow-0">

@@ -1,6 +1,6 @@
 <template>
-    <div class="flex flex-row md:hidden gap-5 overflow-x-scroll">
-        <div class="flex flex-col flex-shrink-0 flex-grow-0 rounded-3xl bg-[#191A23] px-12 py-10 gap-5">
+    <div v-motion :initial="{scale:0, opacity: 0}" :visible="{scale: 1, opacity: 1, transition: { duration: 1200, type: 'keyframes', ease: 'easeInOut' }}" class="flex flex-row md:hidden gap-5 overflow-x-scroll">
+        <div class="flex flex-col flex-shrink-0 flex-grow-0 rounded-3xl bg-positivus-dark px-12 py-10 gap-5">
             <p class="max-w-xs text-white text-base">
                 For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase
                 in website traffic and a 25% increase in sales.
@@ -13,7 +13,7 @@
                 </svg>
             </a>
         </div>
-        <div class="flex flex-col flex-shrink-0 flex-grow-0 rounded-3xl bg-[#191A23] px-12 py-10 gap-5">
+        <div class="flex flex-col flex-shrink-0 flex-grow-0 rounded-3xl bg-positivus-dark px-12 py-10 gap-5">
             <p class="max-w-xs text-white text-base">
                 For a B2B software company, we developed an SEO strategy that resulted in a first page ranking
                 for key keywords and a 200% increase in organic traffic.
@@ -27,7 +27,7 @@
             </a>
         </div>
     </div>
-    <div class="hidden md:flex flex-row rounded-3xl bg-[#191A23] px-16 py-16">
+    <div v-motion :initial="{scale:0, opacity: 0}" :visible="{scale: 1, opacity: 1, transition: { duration: 1200, type: 'keyframes', ease: 'easeInOut' }}" class="hidden md:flex flex-row rounded-3xl bg-positivus-dark px-16 py-16">
         <div class="flex flex-col gap-5">
             <p class="max-w-xs text-white text-lg">
                 For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase

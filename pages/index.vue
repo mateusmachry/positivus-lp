@@ -1,24 +1,7 @@
 <template>
     <div class="flex flex-col w-full min-h-screen bg-white px-6 md:px-12 xl:px-24 overflow-x-hidden">
         <TopNavBar class="mt-8 xl:mt-16" />
-        <div id="hero" class="grid grid-cols-1 md:grid-cols-2 my-16">
-            <div class="flex flex-col gap-8">
-                <h1 class="text-5xl xl:text-6xl max-w-xl font-medium">
-                    Navigating the digital landscape for success
-                </h1>
-                <p class="text-base xl:text-xl max-w-xl">
-                    Our digital marketing agency helps businesses grow and succeed online through a range of services
-                    including SEO, PPC, social media marketing, and content creation.
-                </p>
-                <button type="button"
-                    class="w-fit py-5 px-8 inline-flex items-center text-xl rounded-xl border border-transparent bg-gray-800 text-white hover:bg-gray-900 focus:outline-none focus:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800">
-                    Book a consultation
-                </button>
-            </div>
-            <div class="hidden md:flex flex-col">
-                <img src="~/assets/hero-illustration.svg" class="w-[600px] h-fit object-contain" />
-            </div>
-        </div>
+        <Hero class="my-16" />
         <Brands />
         <div id="services" class="flex flex-col">
             <SectionHeader class="mb-10 md:mb-20" title="Services" description="At our digital marketing agency, we offer a range of services to help

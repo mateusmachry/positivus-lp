@@ -1,5 +1,5 @@
 <template>
-    <div id="footer" class="flex flex-col bg-[#191A23] rounded-t-3xl px-16 py-12 shadow-sm">
+    <div v-motion :initial="{y:100, opacity: 0}" :visible="{y: 0, opacity: 1, transition: { duration: 2000, type: 'keyframes', ease: 'easeInOut' }}" id="footer" class="flex flex-col bg-positivus-dark rounded-t-3xl px-16 py-12 shadow-sm">
         <div class="flex flex-row justify-between items-center mb-16">
             <img src="~/assets/logo-white.png" class="object-contain w-auto h-8" />
             <div class="flex flex-row items-center gap-10 text-white">
@@ -17,7 +17,7 @@
         </div>
         <div class="flex flex-row justify-between mb-12">
             <div class="flex flex-col">
-                <div class="w-fit bg-[#B9FF66] rounded-lg px-1 py-1 mb-6">
+                <div class="w-fit bg-positivus-green rounded-lg px-1 py-1 mb-6">
                     <label class="font-medium text-xl">Contact us:</label>
                 </div>
                 <p class="text-lg mb-5 text-white">
@@ -34,7 +34,7 @@
                         placeholder="Email">
                 </div>
                 <button type="button"
-                    class="w-fit max-w-sm py-5 px-8 inline-flex items-center text-center text-xl rounded-xl border border-transparent bg-[#B9FF66] text-black hover:bg-lime-500 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
+                    class="w-fit max-w-sm py-5 px-8 inline-flex items-center text-center text-xl rounded-xl border border-transparent bg-positivus-green text-black hover:bg-lime-500 focus:outline-none disabled:opacity-50 disabled:pointer-events-none">
                     <span>Subscribe to news</span>
                 </button>
             </div>

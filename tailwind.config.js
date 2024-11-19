@@ -2,7 +2,13 @@
 module.exports = {
     content: [],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                'positivus-green': '#B9FF66',
+                'positivus-grey': '#F3F3F3',
+                'positivus-dark': '#191A23',
+            }
+        },
     },
     plugins: [
         require('tailwind-scrollbar-hide'),

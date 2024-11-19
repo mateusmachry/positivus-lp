@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex flex-row justify-between items-center">
+    <nav v-motion :initial="{y:-100, opacity: 0}" :enter="{y: 0, opacity: 1, transition: { duration: 1200, type: 'keyframes', ease: 'easeInOut' }}" class="flex flex-row justify-between items-center">
         <img src="~/assets/logo-black.png" class="w-36 xl:w-56 h-auto object-contain" />
         <div class="hidden md:flex flex-row items-center gap-5 xl:gap-10">
             <a href="#" class="text-base xl:text-xl hover:underline">
@@ -18,7 +18,7 @@
                 Blog
             </a>
             <button type="button"
-                class="py-2.5 xl:py-5 px-4 xl:px-8 inline-flex items-center text-base xl:text-xl rounded-xl border border-gray-800 text-gray-800 hover:border-gray-500 hover:text-gray-500 focus:outline-none focus:border-gray-500 focus:text-gray-500 disabled:opacity-50 disabled:pointer-events-none dark:border-white dark:text-white dark:hover:text-neutral-300 dark:hover:border-neutral-300">
+                class="py-2.5 xl:py-5 px-4 xl:px-8 inline-flex items-center text-base xl:text-xl rounded-xl border border-gray-800 text-black bg-transparent hover:bg-neutral-100 hover:ring-1 hover:ring-black focus:outline-none transition-all disabled:opacity-50 disabled:pointer-events-none">
                 Request a quote
             </button>
         </div>

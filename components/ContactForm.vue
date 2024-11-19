@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row justify-between bg-[#F3F3F3] rounded-3xl pl-12 md:pl-24 pr-12 md:pr-24 lg:pr-0 pt-12 md:pt-16 pb-12 md:pb-20 shadow-sm">
+    <div class="flex flex-row justify-between bg-positivus-grey rounded-3xl pl-12 md:pl-24 pr-12 md:pr-24 lg:pr-0 pt-12 md:pt-16 pb-12 md:pb-20 shadow-sm">
         <div class="flex-1 flex flex-col">
             <div class="flex flex-row gap-8 items-start lg:items-center">
                 <div class="flex items-center">
@@ -34,12 +34,12 @@
                         placeholder="Message"></textarea>
                 </div>
                 <button type="button"
-                    class="w-full max-w-md py-5 px-8 inline-flex items-center text-center text-xl rounded-xl border border-transparent bg-gray-800 text-white hover:bg-gray-900 focus:outline-none focus:bg-gray-900 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800">
+                    class="w-full max-w-md py-5 px-8 inline-flex items-center text-center text-xl rounded-xl border border-transparent bg-positivus-dark text-white hover:bg-black focus:outline-none focus:bg-black disabled:opacity-50 disabled:pointer-events-none">
                     <span class="flex-1">Send Message</span>
                 </button>
             </div>
         </div>
-        <div class="hidden lg:flex flex-col justify-end">
+        <div v-motion :initial="{x:100, opacity: 0}" :visible="{x: 0, opacity: 1, transition: { duration: 1200, type: 'keyframes', ease: 'easeInOut' }}" class="hidden lg:flex flex-col justify-end">
             <img src="~/assets/contact-us-illustration.svg" class="object-contain w-auto max-h-[600px]" />
         </div>
     </div>

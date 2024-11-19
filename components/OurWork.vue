@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col gap-8">
         <div v-for="item in accordionItems" :key="`accordion-${item.index}`"
-            :class="`flex flex-col px-8 md:px-16 py-5 md:py-10 border ${item.isOpen ? 'bg-[#B9FF66]' : 'bg-[#F3F3F3]'}  border-black dark:border-white border-b-8 rounded-3xl shadow-sm`">
+            :class="`flex flex-col px-8 md:px-16 py-5 md:py-10 border ${item.isOpen ? 'bg-positivus-green' : 'bg-positivus-grey'}  border-black dark:border-white border-b-8 rounded-3xl shadow-sm`">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex flex-row gap-4 items-center">
                     <div class="text-black text-nowrap">
@@ -12,14 +12,14 @@
                     </div>
                 </div>
                 <button type="button" @click="toggleAccordion(item)"
-                    class="relative inline-flex justify-center items-center size-[42px] md:size-[58px] text-sm font-semibold rounded-full border border-gray-800 bg-[#F3F3F3] text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
+                    class="relative inline-flex justify-center items-center size-[42px] md:size-[58px] text-sm font-semibold rounded-full border border-gray-800 bg-positivus-grey text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none">
                     <UIcon v-if="item.isOpen" name="mdi:minus-thick" class="1.5em" color="currentColor" />
                     <UIcon v-else name="mdi:add-thick" size="1.5em" color="currentColor" />
                 </button>
             </div>
             <div :style="{ maxHeight: item.isOpen ? '168px' : '0px', overflow: 'hidden' }"
                 class="flex flex-col transition-all duration-500 ease-in-out">
-                <div class="my-4 md:my-8 bg-gray-800 h-[1px]"></div>
+                <div class="my-4 md:my-8 bg-positivus-dark h-[1px]"></div>
                 <p class="text-base md:text-lg">{{ item.description }}</p>
             </div>
         </div>
