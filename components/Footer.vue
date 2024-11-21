@@ -1,5 +1,5 @@
 <template>
-    <div v-motion :initial="{y:100, opacity: 0}" :visible="{y: 0, opacity: 1, transition: { duration: 2000, type: 'keyframes', ease: 'easeInOut' }}" id="footer" class="flex flex-col bg-positivus-dark rounded-t-3xl px-16 py-12 shadow-sm">
+    <div v-motion :initial="{y:100, opacity: 0}" :visible="{y: 0, opacity: 1, transition: { duration: 700, type: 'keyframes', ease: 'easeInOut' }}" id="footer" class="flex flex-col bg-positivus-dark rounded-t-3xl px-16 py-12 shadow-sm">
         <div class="flex flex-row justify-between items-center mb-16">
             <img src="~/assets/logo-white.png" class="object-contain w-auto h-8" />
             <div class="flex flex-row items-center gap-10 text-white">

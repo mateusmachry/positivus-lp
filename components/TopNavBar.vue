@@ -1,5 +1,5 @@
 <template>
-    <nav v-motion :initial="{y:-100, opacity: 0}" :enter="{y: 0, opacity: 1, transition: { duration: 1200, type: 'keyframes', ease: 'easeInOut' }}" class="flex flex-row justify-between items-center">
+    <nav v-motion :initial="{y:-100, opacity: 0}" :enter="{y: 0, opacity: 1, transition: { duration: 700, type: 'keyframes', ease: 'easeInOut' }}" class="flex flex-row justify-between items-center">
         <img src="~/assets/logo-black.png" class="w-36 xl:w-56 h-auto object-contain" />
         <div class="hidden md:flex flex-row items-center gap-5 xl:gap-10">
             <a href="#" class="text-base xl:text-xl hover:underline">

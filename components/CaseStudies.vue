@@ -1,5 +1,5 @@
 <template>
-    <div v-motion :initial="{scale:0, opacity: 0}" :visible="{scale: 1, opacity: 1, transition: { duration: 1200, type: 'keyframes', ease: 'easeInOut' }}" class="flex flex-row md:hidden gap-5 overflow-x-scroll">
+    <div v-motion :initial="{scale:0, opacity: 0}" :visible="{scale: 1, opacity: 1, transition: { duration: 700, type: 'keyframes', ease: 'easeInOut' }}" class="flex flex-row md:hidden gap-5 overflow-x-scroll">
         <div class="flex flex-col flex-shrink-0 flex-grow-0 rounded-3xl bg-positivus-dark px-12 py-10 gap-5">
             <p class="max-w-xs text-white text-base">
                 For a local restaurant, we implemented a targeted PPC campaign that resulted in a 50% increase

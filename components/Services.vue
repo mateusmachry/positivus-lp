@@ -1,8 +1,7 @@
 <template>
-    <div v-motion :initial="{ y: 100, opacity: 0 }"
-        :visible="{ y: 0, opacity: 1, transition: { duration: 1200, type: 'keyframes', ease: 'easeInOut' } }"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-6 md:gap-y-10">
-        <div
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-6 md:gap-y-10">
+        <div v-motion :initial="{ y: 100, opacity: 0 }"
+            :visible="{ y: 0, opacity: 1, transition: { duration: 700, type: 'keyframes', ease: 'easeInOut' } }"
             class="h-80 flex flex-row justify-between gap-20 p-12 border bg-positivus-grey border-black dark:border-white border-b-8 rounded-3xl shadow-sm">
             <div class="flex flex-col justify-between h-full">
                 <div class="flex flex-col">
@@ -28,7 +27,8 @@
                 <img src="~/assets/service-card-1-illustration.png" class="w-56 h-fit object-contain" />
             </div>
         </div>
-        <div
+        <div v-motion :initial="{ y: 100, opacity: 0 }"
+            :visible="{ y: 0, opacity: 1, transition: { duration: 700, type: 'keyframes', ease: 'easeInOut' } }"
             class="h-80 flex flex-row justify-between gap-20 p-12 border bg-positivus-green border-black dark:border-white border-b-8 rounded-3xl shadow-sm">
             <div class="flex flex-col justify-between h-full">
                 <div class="flex flex-col">
@@ -54,7 +54,8 @@
                 <img src="~/assets/service-card-2-illustration.png" class="w-56 h-fit object-contain" />
             </div>
         </div>
-        <div
+        <div v-motion :initial="{ y: 100, opacity: 0 }"
+            :visible="{ y: 0, opacity: 1, transition: { duration: 700, delay: 100, type: 'keyframes', ease: 'easeInOut' } }"
             class="h-80 flex flex-row justify-between gap-20 p-12 border bg-black border-black dark:border-white border-b-8 rounded-3xl shadow-sm">
             <div class="flex flex-col justify-between h-full">
                 <div class="flex flex-col">
@@ -80,7 +81,8 @@
                 <img src="~/assets/service-card-3-illustration.png" class="w-56 h-fit object-contain" />
             </div>
         </div>
-        <div
+        <div v-motion :initial="{ y: 100, opacity: 0 }"
+            :visible="{ y: 0, opacity: 1, transition: { duration: 700, delay: 100, type: 'keyframes', ease: 'easeInOut' } }"
             class="h-80 flex flex-row justify-between gap-20 p-12 border bg-positivus-grey border-black dark:border-white border-b-8 rounded-3xl shadow-sm">
             <div class="flex flex-col justify-between h-full">
                 <div class="flex flex-col">
@@ -106,7 +108,8 @@
                 <img src="~/assets/service-card-4-illustration.png" class="w-56 h-fit object-contain" />
             </div>
         </div>
-        <div
+        <div v-motion :initial="{ y: 100, opacity: 0 }"
+            :visible="{ y: 0, opacity: 1, transition: { duration: 700, delay: 200, type: 'keyframes', ease: 'easeInOut' } }"
             class="h-80 flex flex-row justify-between gap-20 p-12 border bg-positivus-green border-black dark:border-white border-b-8 rounded-3xl shadow-sm">
             <div class="flex flex-col justify-between h-full">
                 <div class="flex flex-col">
@@ -132,7 +135,8 @@
                 <img src="~/assets/service-card-5-illustration.png" class="w-56 h-fit object-contain" />
             </div>
         </div>
-        <div
+        <div v-motion :initial="{ y: 100, opacity: 0 }"
+            :visible="{ y: 0, opacity: 1, transition: { duration: 700, delay: 200, type: 'keyframes', ease: 'easeInOut' } }"
             class="h-80 flex flex-row justify-between gap-20 p-12 border bg-black border-black dark:border-white border-b-8 rounded-3xl shadow-sm">
             <div class="flex flex-col justify-between h-full">
                 <div class="flex flex-col">
