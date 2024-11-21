@@ -17,6 +17,7 @@
     "@nuxt/fonts": "^0.10.2",
     "@nuxt/ui": "^2.18.7",
     "@vueuse/motion": "^2.2.6",
+    "firebase-functions": "^6.1.0",
     "nuxt": "^3.13.2",
     "tailwind-scrollbar-hide": "^1.1.7",
     "vue": "latest",
